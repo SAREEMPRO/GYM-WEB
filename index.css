@@ -207,7 +207,7 @@ a {
 }
 .copy1{
     display: flex;
-        background-image: url(https://cdn.vectorstock.com/i/preview-1x/95/38/abstract-technology-concept-web-header-design-vector-45059538.jpg);
+        background-image: url(https://thumbs.dreamstime.com/b/header-laptop-stationery-yellow-background-header-laptop-stationery-yellow-background-online-education-227485945.jpg);
         justify-content: center;
         align-items: center;
         flex-direction: column;
@@ -216,14 +216,15 @@ a {
         
 }
 .copy1 h2{
-    color: #edecec;
+    color: #000000;
     font-size: 2rem;
 }
 .copy1 p{
     max-width: 700px;
-    color: #FFF;
+    color: #000000;
     margin: 10px 0;
     cursor: pointer;
+    font-family: 'Times New Roman', Times, serif;
 }
 .socialmedia a{
     text-decoration: none;
@@ -232,7 +233,7 @@ a {
     padding: 2px;
 }
 .footer-bottom {
-    background-color: #ff0000;
+    background-color: #000000;
 }
 .footer-bottom p{
     color: white;
@@ -263,36 +264,72 @@ a {
     background: #130f40;
     color: #edecec;
 }
+
+.contact-right:hover{
+    background-color: #ACB1D6;
+}
+
+.contact-right h3{
+    padding-left: 134px;
+    
+}
 .page1 h1{
     margin-bottom: 10px;
     color: #edecec;
     font-family: 'Times New Roman', Times, serif;
+    padding-left:  520px;
 }
 .page1 p{
     margin-bottom: 40px;
     color: #edecec;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding-left: 100px;
 }
 .input1{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+   
+
 }
 .input1 .input-group{
     flex-basis: 45%;
+    /* border-bottom:2px solid #333 ; */
+    outline: none;
 }
 label{
     font-family: 'Times New Roman', Times, serif;
     margin-bottom: 8px;
     display: block;
-    color: #1C00b5;
+    color: #000000;
+    
 }
+.input1 .input-group input{
+    border: none;
+    outline: none;
+    border-bottom: 1px solid black;
+    padding: 8px 8px;
+    background-color: transparent;
+}
+
+.input1 .input-group input #mob{
+    
+}
+
+.input1 .input-group input::placeholder{
+    font-size: 12px black;
+    margin-left: 6px;
+    letter-spacing: 0.1rem;
+}
+
 textarea{
-    width: 100%;
+    width: 80%;
     border: 1px solid #ccc;
     outline: none;
     padding: 10px;
     box-sizing: border-box;
+    /* border-bottom:2px solid #333 ; */
+    
 }
 button{
     background: #ff0000;
@@ -304,24 +341,40 @@ button{
     border-radius: 30px;
     margin-top: 20px;
     box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    cursor: pointer;
+    transition: 2s ease;
 }
-.contact-left h3{
-    color: #b50000;
+
+button:hover{
+    background: #000000;
+}
+
+.contact-left h2{
+    color: #000000;
     font-weight: 600;
     margin-bottom: 30px;
     font-family: 'Times New Roman', Times, serif;
 }
-.contact-right h3{
+.contact-right h2{
     font-weight: 600;
     margin-bottom: 30px;
-}
-tr td:first-child{
-    padding-right: 20px;
-}
-tr td{
-    padding-top: 20px;
 }
 .colour{
     background: #000000;
     background-image: url(https://t4.ftcdn.net/jpg/02/20/84/29/360_F_220842914_Dsw6oZsAy5WwxxxXstoJOzOXAOBPHf6L.jpg);
+}
+.socialmedia a{
+    color: #000000;
+}
+.mail{
+    
+        margin-bottom: 1rem;
+        display: flex;
+        gap: 1rem;
+        
+}
+.cr-social{
+    padding-bottom: 20px;
+    margin: 13px;
+    font-size: 25px;
 }

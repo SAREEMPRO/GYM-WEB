@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muscle & Fitness GYM</title>
-    <link rel="stylesheet" href="gym.css"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
 <body>
@@ -16,13 +17,13 @@
         </div>
         <br>
         <Ui class="NAV">
-            <li> <a href="#">PROGRAMS</a></li>
-            <li> <a href="#">SCHEDULE</a></li>
-            <li> <a href="#">ABOUT</a></li>
-            <li> <a href="#">CONTACT</a></li>
+            <li> <a href="#PROGRAMS">PROGRAMS</a></li>
+            <li> <a href="#schedule">SCHEDULE</a></li>
+            <li> <a href="#about">ABOUT</a></li>
+            <li> <a href="#CONTACT">CONTACT</a></li>
         </Ui>
     </div>
-    <div class="content">
+    <div class="content" id="PROGRAMS">
         <div class="bannerBox">
             <h1>WELCOME & TO <BR><span>Muscle & Fitness</span>
             </h1>
@@ -57,7 +58,7 @@
 
         </div>
     </div>
-    <div class="card-container2">
+    <div class="card-container2" id="schedule">
         <div class="services_sec">
             <div class="card-tittle">
                 <img src="images/exercise-100x100.png" alt="">
@@ -98,52 +99,55 @@
         <p>The page contains one or more of the following items: an e-mail address. a telephone number. a postal address, sometimes accompanied with a map showing the location.</p>
         <div class="contact-box">
             <div class="contact-left">
-<h3>Send Your Requst</h3>
+<h2>Send Your Requst</h2>
 <form>
-    <div class="input1">
+    <div class="input1" id="CONTACT">
         <div class="input-group">
             <label>Name <br></label>
-            <input type="text" placeholder="Your Name">
+            <input type="text" placeholder="Enter Your Name" required>
         </div>
         <div class="input-group">
             <label>Phone <br></label>
-            <input type="text" placeholder="Your Number">
+            <input type="number" placeholder="Enter Your Mobile" required>
         </div>
     </div>
     <div class="input1">
         <div class="input-group">
             <label>Email Id <br></label>
-            <input type="text" placeholder="Your Email@">
+            <input type="email" placeholder="Enter Your Email Id" required>
         </div>
         <div class="input-group">
-            <label>Subject <br></label>
-            <input type="text" placeholder="Write Here">
+            <label>Gender<br></label>
+            <input  type="radio" id="male" name="gender"> Male
+            <input  type="radio" id="female" name="gender"> Female
         </div>
     </div>
     <label >Message</label>
-    <textarea rows="5" placeholder="Your Massage"></textarea>
-    <button type="Submit">SEND</button>
+    <textarea rows="5" placeholder="Your Message" required></textarea><br>
+    <button type="Submit"> SEND</button>
 </form>
             </div>
-            <div class="contact-right">
+             <div class="contact-right"> 
                 <h3>Reach us</h3>
-                <table>
-                    <tr>
-                        <td>Email</td>
-                        <td>Muscle&Fitness_GYM@gmail.com</td>
-                    </tr>
-                    <tr>
-                        <td>Phone</td>
-                        <td>+91 890 890 2233</td>
-                    </tr>
-                    <tr>
-                        <td>Address</td>
-                        <td>#51/, Ground Floor, 7th cross <br>
-                        some layout, some road, koromangla <br>
-                    Bangalure 635802</td>
-                    </tr>
-                </table>
-            </div>
+                <br>
+                
+                <div class="cr-social">
+                    <div class="mail">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <h6>contact@musclefitness.com</h6>
+                    </div>
+                    <div class="mail" id="cell">
+                        <i class="fa fa-address-book" aria-hidden="true"></i>
+                        <h6>c+91 890 890 2233</h6>
+                    </div>
+                    <div class="mail" id="location">
+                        <i class="fa fa-map-marker" aria-hidden="true"></i>
+                        <h6>#51/, Ground Floor, 7th cross <br>
+                            some layout, some road, koromangla <br>
+                        Bangalure 635802</h6>
+                    </div>
+                
+            </div> 
         </div>
     </div>
 </div>
@@ -160,7 +164,7 @@
     </div>
 </div>
 <div class="footer-bottom">
-    <p>CopyRight &copy;2023 Muscle & Fitness GYM. Designed By <SPan class="Designed">SAREEM</SPan></p>
+    <p>CopyRight &copy;2023 Muscle & Fitness GYM Designed By <SPan class="Designed">SAREEM</SPan></p>
 </div>
 </body>
 </html>
